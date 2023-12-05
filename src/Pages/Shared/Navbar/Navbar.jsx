@@ -5,7 +5,6 @@ import logo from "../../../assets/logo/logo1.png"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isSubOpen, setIsSubOpen] = useState(false);
 
     const navItem = <>
         <li><NavLink to="/" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Home</NavLink></li>
@@ -30,7 +29,7 @@ const Navbar = () => {
         </Link>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 sticky top-0 z-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
