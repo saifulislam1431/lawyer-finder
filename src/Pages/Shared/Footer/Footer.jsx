@@ -25,10 +25,12 @@ const Footer = () => {
                 <header className="brandFont text-xl font-bold">Contact Now</header>
                 <Link className="link link-hover text-gray-300 mt-5">555 4th 5t NW, Washington <br />
                     DC 20530, United States</Link>
-                <Link className="link link-hover text-gray-300 my-2">+88 01750 000 000 <br />
-                    +88 01750 000 000</Link>
-                <Link className="link link-hover text-gray-300">info@gmail.com <br />
-                    info@gmail.com</Link>
+                <Link className="link link-hover text-gray-300 mt-2">+88 01750 000 000</Link>
+
+                <Link className="link link-hover text-gray-300 mb-2">+88 01750 000 000</Link>
+
+                <Link className="link link-hover text-gray-300">info@gmail.com </Link>
+                <Link className="link link-hover text-gray-300">info@gmail.com </Link>
             </nav>
             <nav>
                 <header className="brandFont text-xl font-bold">Subscribe</header>
