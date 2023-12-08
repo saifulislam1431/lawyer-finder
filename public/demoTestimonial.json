@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "client_name": "Tom Katz",
+        "client_img": "https://i.ibb.co/MMFZVwh/Social-Connectedness-Isolation.jpg",
+        "rating": 5,
+        "comment": "I found the perfect Business Law attorney through Lawyer Finder. The expertise and guidance exceeded my expectations. Highly recommended!"
+    },
+    {
+        "id": 2,
+        "client_name": "John Smith",
+        "client_img": "https://i.ibb.co/2NQF3Ls/csm-Person-Yury-Prof-Foto-An-LI-Footgrafie-2-JPG-94f12fbf25.jpg",
+        "rating": 4,
+        "comment": "Exceptional service in Criminal Law. The attorney was dedicated, knowledgeable, and helped me navigate a challenging legal situation."
+    },
+    {
+        "id": 3,
+        "client_name": "Emily Turner",
+        "client_img": "https://i.ibb.co/JC8GWhW/blog-social-isolation-1024x683.jpg",
+        "rating": 5,
+        "comment": "Outstanding support in Child Support matters. The attorney was compassionate, understanding, and ensured the best outcome for my child."
+    },
+    {
+        "id": 4,
+        "client_name": "David Miller",
+        "client_img": "https://i.ibb.co/fdxq80H/9-Scarlett-Johansson.jpg",
+        "rating": 4,
+        "comment": "Navigating Divorce Law was smoother with Lawyer Finder. The attorney provided clear guidance, making a difficult process more manageable."
+    }
+]

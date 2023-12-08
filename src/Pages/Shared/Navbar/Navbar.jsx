@@ -11,11 +11,13 @@ const Navbar = () => {
 
         <li><NavLink to="/services" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Services <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
-        <li><NavLink to="/cases" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Cases <HiChevronRight className='h-5 w-5' /></NavLink></li>
+        <li><NavLink to="/cases" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Lawyer <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
         <li><NavLink to="/blog" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Blog <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
         <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Contact Us <HiChevronRight className='h-5 w-5' /></NavLink></li>
+
+        <li><NavLink to="/sign-in" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Sign In <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
         <li className='lg:hidden'>
             <Link to="/consultation" className="myBtn">Free Consultation</Link>

@@ -11,6 +11,8 @@ import Blogs from '../Pages/Blogs/Blogs';
 import ContactUs from '../Pages/ContactUs/ContactUs';
 import Consultation from '../Pages/Consultation/Consultation';
 import About from '../Pages/About/About';
+import SignIn from '../Pages/SignIn/SignIn';
+import Signup from '../Pages/Signup/Signup';
 
 const router = createBrowserRouter([
     {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />
+            },
+            {
+                path: "/sign-in",
+                element: <SignIn />
+            },
+            {
+                path: "/sign-up",
+                element: <Signup />
             }
         ]
     },

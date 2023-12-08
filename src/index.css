@@ -24,3 +24,7 @@ body {
 .navDefault {
     @apply text-sm inline-flex items-center gap-1 font-semibold bg-transparent hover:bg-transparent
 }
+
+.inputField {
+    @apply w-full px-6 py-2 rounded-md bg-gray-600 bg-opacity-20 focus:outline focus:outline-accent disabled:opacity-70 disabled:cursor-not-allowed placeholder:text-sm placeholder:text-red-600
+}
