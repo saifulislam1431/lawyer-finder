@@ -2,10 +2,24 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { HiChevronRight } from "react-icons/hi2";
 import logo from "../../../assets/logo/logo1.png"
+import useAuth from '../../../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const { user, logOut } = useAuth();
+    // console.log(user);
+    const handleOut = () => {
+        logOut()
+            .then(() => {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'logout successful!',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                })
+            })
+    }
     const navItem = <>
         <li><NavLink to="/" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Home</NavLink></li>
 
@@ -17,7 +31,13 @@ const Navbar = () => {
 
         <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Contact Us <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
-        <li><NavLink to="/sign-in" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Sign In <HiChevronRight className='h-5 w-5' /></NavLink></li>
+        {
+            user ? <>
+                <li><NavLink to="/profile" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Profile <HiChevronRight className='h-5 w-5' /></NavLink></li>
+
+                <li><button className='navDefault' onClick={handleOut}>Logout <HiChevronRight className='h-5 w-5' /></button></li>
+            </> : <li><NavLink to="/sign-in" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Sign In <HiChevronRight className='h-5 w-5' /></NavLink></li>
+        }
 
         <li className='lg:hidden'>
             <Link to="/consultation" className="myBtn">Free Consultation</Link>
@@ -30,6 +50,8 @@ const Navbar = () => {
             <p className='brandFont font-bold text-xl'>Lawyer Finder</p>
         </Link>
     </>
+
+
     return (
         <div className="navbar bg-base-100 sticky top-0 z-50">
             <div className="navbar-start">

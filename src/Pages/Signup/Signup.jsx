@@ -5,9 +5,13 @@ import img from "../../assets/Banner/banner4.png";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import imgLogo from "../../assets/Banner/imglogo.png"
+import useAuth from '../../hooks/useAuth';
+import Swal from 'sweetalert2';
 
+
+const token = import.meta.env.VITE_IMAGE_TOKEN;
 const Signup = () => {
-    // const { updateUser, signUp, userVerify } = useAuth();
+    const { updateUser, signUp, userVerify } = useAuth();
     const [type, setType] = useState("password");
     const [IsShow, setIsShow] = useState(false);
     const [error, setError] = useState("");
@@ -15,7 +19,7 @@ const Signup = () => {
     const navigate = useNavigate()
     const from = location.state?.from?.pathname || "/"
     const { register, formState: { errors }, handleSubmit } = useForm();
-    // const hosting_url = `https://api.imgbb.com/1/upload?key=${token}`
+    const hosting_url = `https://api.imgbb.com/1/upload?key=${token}`
 
 
 
@@ -42,64 +46,70 @@ const Signup = () => {
 
 
 
-        // fetch(hosting_url, {
-        //     method: "POST",
-        //     body: formData
-        // })
-        //     .then(res => res.json())
-        //     .then(ResData => {
-        //             console.log(ResData.data.url)
-        //         if (ResData) {
-        //             const newUser = {
-        //                 email: data.email,
-        //                 name: data.name,
-        //                 phone: data.phone,
-        //                 gender: data.gender,
-        //                 photo: ResData.data.url,
-        //                 role:"User"
+        fetch(hosting_url, {
+            method: "POST",
+            body: formData
+        })
+            .then(res => res.json())
+            .then(ResData => {
+                console.log(ResData.data.url)
+                if (ResData) {
+                    const newUser = {
+                        email: data.email,
+                        name: data.name,
+                        phone: data.phone,
+                        gender: data.gender,
+                        photo: ResData.data.url,
+                        role: "User"
 
-        //             }
-
-
-        //             signUp(data?.email, data?.password)
-        //                 .then((res) => {
-        //                     const loggedUser = res.user;
-
-        //                     updateUser(loggedUser, data?.name )
-        //                         .then(async () => {
-        //                             userVerify()
-        //                                 .then(async () => {
-        //                                     const res = await axios.post('https://dl-customs-server.vercel.app/add-new-users', newUser);
-        //                                     console.log(res.data)
-        //                                     if (res.data.insertedId) {
-        //                                         navigate(from, { replace: true })
-        //                                         Swal.fire({
-        //                                             title: 'Success!',
-        //                                             text: 'Sign up successful and check your email to verify!',
-        //                                             icon: 'success',
-        //                                             confirmButtonText: 'Ok'
-        //                                         })
-        //                                     }
-        //                                 })
-        //                         })
+                    }
 
 
-        //                 })
-        //                 .catch(error => {
-        //                     Swal.fire({
-        //                         title: 'Error!',
-        //                         text: error.message,
-        //                         icon: 'error',
-        //                         confirmButtonText: 'Cool'
-        //                     })
+                    signUp(data?.email, data?.password)
+                        .then((res) => {
+                            const loggedUser = res.user;
 
-        //                 })
+                            updateUser(loggedUser, data?.name)
+                                .then(async () => {
+                                    userVerify()
+                                        .then(async () => {
+                                            Swal.fire({
+                                                title: 'Success!',
+                                                text: 'Sign up successful and check your email to verify!',
+                                                icon: 'success',
+                                                confirmButtonText: 'Ok'
+                                            })
+                                            // const res = await axios.post('https://dl-customs-server.vercel.app/add-new-users', newUser);
+                                            // console.log(res.data)
+                                            // if (res.data.insertedId) {
+                                            //     navigate(from, { replace: true })
+                                            //     Swal.fire({
+                                            //         title: 'Success!',
+                                            //         text: 'Sign up successful and check your email to verify!',
+                                            //         icon: 'success',
+                                            //         confirmButtonText: 'Ok'
+                                            //     })
+                                            // }
+                                        })
+                                })
 
-        //         }
 
-        //     })
+                        })
+                        .catch(error => {
+                            Swal.fire({
+                                title: 'Error!',
+                                text: error.message,
+                                icon: 'error',
+                                confirmButtonText: 'Cool'
+                            })
 
-        console.log(data);
+                        })
+
+                }
+
+            })
+
+        // console.log(data);
 
 
     }

@@ -5,9 +5,10 @@ import Swal from 'sweetalert2';
 import img from "../../assets/Banner/banner4.png"
 import { HiArrowSmallLeft } from 'react-icons/hi2';
 import { FaEye, FaEyeSlash, FaFacebookF, FaGoogle } from 'react-icons/fa';
+import useAuth from '../../hooks/useAuth';
 
 const SignIn = () => {
-    // const { signIn, googleIn } = useAuth();
+    const { signIn, googleIn } = useAuth();
     const [type, setType] = useState("password");
     const [IsShow, setIsShow] = useState(false);
     const location = useLocation();
@@ -16,26 +17,26 @@ const SignIn = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const onSubmit = (data) => {
 
-        // signIn(data?.email, data?.password)
-        //     .then(res => {
-        //         const loggedUser = res.user;
-        //         navigate(from, { replace: true })
-        //         Swal.fire({
-        //             title: 'Success!',
-        //             text: 'Sign In Successful',
-        //             icon: 'success',
-        //             confirmButtonText: 'Ok'
-        //         })
-        //     })
-        //     .catch(error => {
-        //         Swal.fire({
-        //             title: 'Error!',
-        //             text: error.message,
-        //             icon: 'error',
-        //             confirmButtonText: 'Cool'
-        //         })
+        signIn(data?.email, data?.password)
+            .then(res => {
+                const loggedUser = res.user;
+                navigate(from, { replace: true })
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Sign In Successful',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                })
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: error.message,
+                    icon: 'error',
+                    confirmButtonText: 'Cool'
+                })
 
-        //     })
+            })
 
         console.log(data);
     };
@@ -50,38 +51,44 @@ const SignIn = () => {
     }
 
 
-    // const handleGoogle = async () => {
-    //     googleIn()
-    //         .then(async (res) => {
-    //             const loggedUser = res.user;
-    //             const newData = {
-    //                 email: loggedUser.email,
-    //                 name: loggedUser.displayName,
-    //                 photo: loggedUser.photoURL,
-    //                 role:"User"
-    //             }
+    const handleGoogle = async () => {
+        googleIn()
+            .then(async (res) => {
+                const loggedUser = res.user;
+                const newData = {
+                    email: loggedUser.email,
+                    name: loggedUser.displayName,
+                    photo: loggedUser.photoURL,
+                    role: "User"
+                }
 
-    //             const resData = await axios.post('https://dl-customs-server.vercel.app/add-new-users', newData);
-    //             if (resData.data.insertedId) {
-    //                 navigate(from, { replace: true })
-    //                 Swal.fire({
-    //                     title: 'Success!',
-    //                     text: 'Sign up successful!',
-    //                     icon: 'success',
-    //                     confirmButtonText: 'Ok'
-    //                 })
-    //             }
-    //         })
-    //         .catch(error => {
-    //             Swal.fire({
-    //                 title: 'Error!',
-    //                 text: error.message,
-    //                 icon: 'error',
-    //                 confirmButtonText: 'Cool'
-    //             })
+                // const resData = await axios.post('https://dl-customs-server.vercel.app/add-new-users', newData);
+                // if (resData.data.insertedId) {
+                //     navigate(from, { replace: true })
+                //     Swal.fire({
+                //         title: 'Success!',
+                //         text: 'Sign up successful!',
+                //         icon: 'success',
+                //         confirmButtonText: 'Ok'
+                //     })
+                // }
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Sign up successful and check your email to verify!',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                })
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: error.message,
+                    icon: 'error',
+                    confirmButtonText: 'Cool'
+                })
 
-    //         })
-    // }
+            })
+    }
     return (
         <section className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row w-4/5 mx-auto rounded-xl my-14 border-2'>
 
@@ -134,7 +141,7 @@ const SignIn = () => {
                 <div className="divider my-9">Or Continue With </div>
 
                 <div className='flex gap-10 justify-center mt-4'>
-                    <button className='border border-base-300 px-4 py-4 rounded-full hover:bg-base-200 hover:text-red-600  transition-all duration-500'><FaGoogle className='w-7 h-7' /></button>
+                    <button className='border border-base-300 px-4 py-4 rounded-full hover:bg-base-200 hover:text-red-600  transition-all duration-500' onClick={handleGoogle}><FaGoogle className='w-7 h-7' /></button>
 
                     <button className='border border-base-300 px-4 py-4 rounded-full hover:bg-base-200 hover:text-red-600  transition-all duration-500'><FaFacebookF className='w-7 h-7' /></button>
                 </div>
