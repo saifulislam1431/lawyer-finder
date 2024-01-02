@@ -8,14 +8,21 @@ import {
 } from "react-router-dom";
 import Auth from './Auth/Auth.jsx'
 import { HelmetProvider } from 'react-helmet-async'
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <Auth>
-        <RouterProvider router={router} />
-      </Auth>
-    </HelmetProvider>
-
+    <QueryClientProvider client={queryClient}>
+      <HelmetProvider>
+        <Auth>
+          <RouterProvider router={router} />
+        </Auth>
+      </HelmetProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 )

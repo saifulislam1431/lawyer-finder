@@ -1,0 +1,1172 @@
+[
+    {
+        "name": "John Doe",
+        "image": "https://i.ibb.co/Mn8vkZ7/Lawyer1.jpg",
+        "expert_in": "Criminal Law",
+        "fee_structure": [
+            {
+                "service_name": "Initial Consultation",
+                "fee": 200,
+                "details": "1-hour meeting"
+            },
+            {
+                "service_name": "Case Representation",
+                "fee": 5000,
+                "details": "Per court appearance"
+            },
+            {
+                "service_name": "Legal Advice",
+                "fee": 300,
+                "details": "Per hour"
+            }
+        ],
+        "description": "Experienced criminal defense attorney with a passion for justice.",
+        "rating": 4.8,
+        "reviews": 42,
+        "total_case": 150,
+        "success_rate": 85,
+        "blogs": [
+            {
+                "title": "Navigating the Legal System",
+                "content": "Understanding the basics of criminal law.",
+                "date": "2023-01-15"
+            },
+            {
+                "title": "Top 5 Legal Mistakes to Avoid",
+                "content": "Common pitfalls in criminal cases.",
+                "date": "2023-02-22"
+            }
+        ]
+    },
+    {
+        "name": "Alice Smith",
+        "image": "https://i.ibb.co/gZDS2GD/Lawyer2.jpg",
+        "expert_in": "Family Law",
+        "fee_structure": [
+            {
+                "service_name": "Divorce Proceedings",
+                "fee": 4000,
+                "details": "Complete process"
+            },
+            {
+                "service_name": "Child Custody",
+                "fee": 2500,
+                "details": "Negotiation and representation"
+            },
+            {
+                "service_name": "Adoption",
+                "fee": 1500,
+                "details": "Legal paperwork and court filing"
+            }
+        ],
+        "description": "Dedicated family law attorney helping clients navigate complex legal issues.",
+        "rating": 4.5,
+        "reviews": 28,
+        "total_case": 100,
+        "success_rate": 90,
+        "blogs": [
+            {
+                "title": "Understanding Alimony",
+                "content": "Key considerations in spousal support.",
+                "date": "2023-03-10"
+            },
+            {
+                "title": "The Importance of Mediation",
+                "content": "Resolving family disputes amicably.",
+                "date": "2023-04-18"
+            }
+        ]
+    },
+    {
+        "name": "Robert Johnson",
+        "image": "https://i.ibb.co/XF934rm/Lawyer3.jpg",
+        "expert_in": "Real Estate Law",
+        "fee_structure": [
+            {
+                "service_name": "Property Transactions",
+                "fee": 3000,
+                "details": "Buy/sell agreements"
+            },
+            {
+                "service_name": "Land Use Disputes",
+                "fee": 2500,
+                "details": "Zoning and development cases"
+            },
+            {
+                "service_name": "Title Issues",
+                "fee": 1200,
+                "details": "Title search and dispute resolution"
+            }
+        ],
+        "description": "Experienced real estate attorney helping clients with property-related legal matters.",
+        "rating": 4.7,
+        "reviews": 35,
+        "total_case": 120,
+        "success_rate": 88,
+        "blogs": [
+            {
+                "title": "Navigating Property Closings",
+                "content": "Understanding the legalities of real estate closings.",
+                "date": "2023-05-05"
+            },
+            {
+                "title": "Zoning Laws Demystified",
+                "content": "Key points to know about zoning laws.",
+                "date": "2023-06-12"
+            }
+        ]
+    },
+    {
+        "name": "Eva Martinez",
+        "image": "https://i.ibb.co/pZYKPZ0/Lawyer4.jpg",
+        "expert_in": "Immigration Law",
+        "fee_structure": [
+            {
+                "service_name": "Visa Applications",
+                "fee": 1500,
+                "details": "Work, family, and student visas"
+            },
+            {
+                "service_name": "Deportation Defense",
+                "fee": 5000,
+                "details": "Representation in immigration court"
+            },
+            {
+                "service_name": "Green Card Processing",
+                "fee": 2500,
+                "details": "Legal assistance in obtaining a green card"
+            }
+        ],
+        "description": "Passionate immigration attorney dedicated to helping individuals navigate the complex immigration system.",
+        "rating": 4.6,
+        "reviews": 40,
+        "total_case": 90,
+        "success_rate": 92,
+        "blogs": [
+            {
+                "title": "Common Immigration Myths",
+                "content": "Debunking misconceptions about immigration law.",
+                "date": "2023-07-20"
+            },
+            {
+                "title": "Steps to Obtain a Green Card",
+                "content": "Understanding the green card application process.",
+                "date": "2023-08-28"
+            }
+        ]
+    },
+    {
+        "name": "Michael Brown",
+        "image": "https://i.ibb.co/JCmHXJ7/lawyer5.webp",
+        "expert_in": "Personal Injury Law",
+        "fee_structure": [
+            {
+                "service_name": "Auto Accident Claims",
+                "fee": 3500,
+                "details": "Representation in car accident cases"
+            },
+            {
+                "service_name": "Medical Malpractice",
+                "fee": 5000,
+                "details": "Compensation for medical negligence"
+            },
+            {
+                "service_name": "Slip and Fall Cases",
+                "fee": 2000,
+                "details": "Premises liability claims"
+            }
+        ],
+        "description": "Dedicated personal injury attorney committed to obtaining fair compensation for clients.",
+        "rating": 4.9,
+        "reviews": 50,
+        "total_case": 80,
+        "success_rate": 95,
+        "blogs": [
+            {
+                "title": "Steps to Take After a Car Accident",
+                "content": "Guidelines for handling auto accidents.",
+                "date": "2023-09-15"
+            },
+            {
+                "title": "Understanding Medical Malpractice",
+                "content": "Key elements in medical malpractice cases.",
+                "date": "2023-10-22"
+            }
+        ]
+    },
+    {
+        "name": "Sarah White",
+        "image": "https://i.ibb.co/g4BBNK8/Lawyer6.jpg",
+        "expert_in": "Intellectual Property Law",
+        "fee_structure": [
+            {
+                "service_name": "Trademark Registration",
+                "fee": 1200,
+                "details": "Filing and registration process"
+            },
+            {
+                "service_name": "Patent Applications",
+                "fee": 5000,
+                "details": "Assistance in obtaining patents"
+            },
+            {
+                "service_name": "Copyright Protection",
+                "fee": 1500,
+                "details": "Legal advice on copyright matters"
+            }
+        ],
+        "description": "Experienced intellectual property attorney helping clients protect their creative works.",
+        "rating": 4.7,
+        "reviews": 38,
+        "total_case": 110,
+        "success_rate": 89,
+        "blogs": [
+            {
+                "title": "The Importance of Trademarks",
+                "content": "How trademarks safeguard your brand.",
+                "date": "2023-11-10"
+            },
+            {
+                "title": "Navigating the Patent Process",
+                "content": "Understanding the steps to obtain a patent.",
+                "date": "2023-12-18"
+            }
+        ]
+    },
+    {
+        "name": "Daniel Garcia",
+        "image": "https://i.ibb.co/k1BK5ym/lawyer7.webp",
+        "expert_in": "Employment Law",
+        "fee_structure": [
+            {
+                "service_name": "Wrongful Termination",
+                "fee": 3000,
+                "details": "Legal representation in wrongful termination cases"
+            },
+            {
+                "service_name": "Discrimination Claims",
+                "fee": 2500,
+                "details": "Filing and pursuing discrimination claims"
+            },
+            {
+                "service_name": "Employment Contracts",
+                "fee": 1200,
+                "details": "Review and negotiation of employment contracts"
+            }
+        ],
+        "description": "Dedicated employment law attorney advocating for employees' rights in the workplace.",
+        "rating": 4.6,
+        "reviews": 45,
+        "total_case": 95,
+        "success_rate": 91,
+        "blogs": [
+            {
+                "title": "Understanding Wrongful Termination",
+                "content": "Key elements in wrongful termination cases.",
+                "date": "2024-01-15"
+            },
+            {
+                "title": "Addressing Workplace Discrimination",
+                "content": "Steps to take if you experience discrimination at work.",
+                "date": "2024-02-22"
+            }
+        ]
+    },
+    {
+        "name": "Olivia Taylor",
+        "image": "https://i.ibb.co/gZhzttv/Lawyer8.jpg",
+        "expert_in": "Bankruptcy Law",
+        "fee_structure": [
+            {
+                "service_name": "Chapter 7 Bankruptcy",
+                "fee": 2000,
+                "details": "Assistance in filing for Chapter 7 bankruptcy"
+            },
+            {
+                "service_name": "Debt Settlement",
+                "fee": 2500,
+                "details": "Negotiation with creditors for debt settlement"
+            },
+            {
+                "service_name": "Chapter 13 Bankruptcy",
+                "fee": 3500,
+                "details": "Guidance and representation in Chapter 13 cases"
+            }
+        ],
+        "description": "Experienced bankruptcy attorney helping individuals navigate financial challenges.",
+        "rating": 4.5,
+        "reviews": 30,
+        "total_case": 85,
+        "success_rate": 87,
+        "blogs": [
+            {
+                "title": "Understanding Chapter 7 Bankruptcy",
+                "content": "Key points in Chapter 7 bankruptcy cases.",
+                "date": "2024-03-10"
+            },
+            {
+                "title": "Navigating Debt Settlement",
+                "content": "Tips for negotiating with creditors.",
+                "date": "2024-04-18"
+            }
+        ]
+    },
+    {
+        "name": "William Turner",
+        "image": "https://i.ibb.co/L6scBVx/Lawyer9.jpg",
+        "expert_in": "Environmental Law",
+        "fee_structure": [
+            {
+                "service_name": "Environmental Compliance",
+                "fee": 3000,
+                "details": "Assistance in complying with environmental regulations"
+            },
+            {
+                "service_name": "Land Use Planning",
+                "fee": 3500,
+                "details": "Guidance on environmentally conscious land development"
+            },
+            {
+                "service_name": "Environmental Litigation",
+                "fee": 5000,
+                "details": "Representation in environmental legal disputes"
+            }
+        ],
+        "description": "Passionate environmental law attorney advocating for sustainable practices.",
+        "rating": 4.8,
+        "reviews": 48,
+        "total_case": 80,
+        "success_rate": 93,
+        "blogs": [
+            {
+                "title": "Importance of Environmental Compliance",
+                "content": "How businesses can adhere to environmental regulations.",
+                "date": "2024-05-15"
+            },
+            {
+                "title": "Land Use Planning for a Sustainable Future",
+                "content": "Balancing development and environmental conservation.",
+                "date": "2024-06-22"
+            }
+        ]
+    },
+    {
+        "name": "Sophia Adams",
+        "image": "https://i.ibb.co/9qsdJbK/Lawyer10.jpg",
+        "expert_in": "Business Law",
+        "fee_structure": [
+            {
+                "service_name": "Business Formation",
+                "fee": 2500,
+                "details": "Assistance in forming a legal business entity"
+            },
+            {
+                "service_name": "Contract Drafting",
+                "fee": 2000,
+                "details": "Drafting and reviewing business contracts"
+            },
+            {
+                "service_name": "Business Litigation",
+                "fee": 4000,
+                "details": "Representation in business legal disputes"
+            }
+        ],
+        "description": "Experienced business law attorney providing comprehensive legal solutions to entrepreneurs and corporations.",
+        "rating": 4.9,
+        "reviews": 55,
+        "total_case": 120,
+        "success_rate": 94,
+        "blogs": [
+            {
+                "title": "Choosing the Right Business Structure",
+                "content": "Factors to consider when forming a business.",
+                "date": "2024-07-20"
+            },
+            {
+                "title": "Key Elements of a Strong Business Contract",
+                "content": "Ensuring the effectiveness of business agreements.",
+                "date": "2024-08-28"
+            }
+        ]
+    },
+    {
+        "name": "Jennifer Anderson",
+        "image": "https://i.ibb.co/GkB0v0B/lawyer11.webp",
+        "expert_in": "Intellectual Property Law",
+        "fee_structure": [
+            {
+                "service_name": "Trademark Registration",
+                "fee": 1200,
+                "details": "Filing and registration process"
+            },
+            {
+                "service_name": "Patent Applications",
+                "fee": 5000,
+                "details": "Assistance in obtaining patents"
+            },
+            {
+                "service_name": "Copyright Protection",
+                "fee": 1500,
+                "details": "Legal advice on copyright matters"
+            }
+        ],
+        "description": "Experienced intellectual property attorney helping clients protect their creative works.",
+        "rating": 4.7,
+        "reviews": 38,
+        "total_case": 110,
+        "success_rate": 89,
+        "blogs": [
+            {
+                "title": "The Importance of Trademarks",
+                "content": "How trademarks safeguard your brand.",
+                "date": "2024-09-10"
+            },
+            {
+                "title": "Navigating the Patent Process",
+                "content": "Understanding the steps to obtain a patent.",
+                "date": "2024-10-18"
+            }
+        ]
+    },
+    {
+        "name": "Matthew Turner",
+        "image": "https://i.ibb.co/NFNJhkQ/Lawyer12.jpg",
+        "expert_in": "Criminal Defense Law",
+        "fee_structure": [
+            {
+                "service_name": "Initial Consultation",
+                "fee": 200,
+                "details": "1-hour meeting"
+            },
+            {
+                "service_name": "Case Representation",
+                "fee": 5000,
+                "details": "Per court appearance"
+            },
+            {
+                "service_name": "Legal Advice",
+                "fee": 300,
+                "details": "Per hour"
+            }
+        ],
+        "description": "Experienced criminal defense attorney with a focus on protecting clients' rights.",
+        "rating": 4.9,
+        "reviews": 45,
+        "total_case": 160,
+        "success_rate": 87,
+        "blogs": [
+            {
+                "title": "Defending Against Drug Charges",
+                "content": "Strategies for handling drug-related criminal cases.",
+                "date": "2024-11-15"
+            },
+            {
+                "title": "Your Rights During Police Interactions",
+                "content": "Understanding and asserting your rights.",
+                "date": "2024-12-22"
+            }
+        ]
+    },
+    {
+        "name": "Natalie Garcia",
+        "image": "https://i.ibb.co/7psWj0R/lawyer13.webp",
+        "expert_in": "Family Law",
+        "fee_structure": [
+            {
+                "service_name": "Divorce Proceedings",
+                "fee": 4000,
+                "details": "Complete process"
+            },
+            {
+                "service_name": "Child Custody",
+                "fee": 2500,
+                "details": "Negotiation and representation"
+            },
+            {
+                "service_name": "Adoption",
+                "fee": 1500,
+                "details": "Legal paperwork and court filing"
+            }
+        ],
+        "description": "Dedicated family law attorney committed to helping clients through challenging times.",
+        "rating": 4.6,
+        "reviews": 38,
+        "total_case": 120,
+        "success_rate": 90,
+        "blogs": [
+            {
+                "title": "Navigating Child Custody Disputes",
+                "content": "Tips for parents going through custody battles.",
+                "date": "2025-01-10"
+            },
+            {
+                "title": "The Emotional Challenges of Divorce",
+                "content": "Supporting clients through the emotional aspects of divorce.",
+                "date": "2025-02-18"
+            }
+        ]
+    },
+    {
+        "name": "Jonathan Miller",
+        "image": "https://i.ibb.co/x54c0kJ/lawyer14.webp",
+        "expert_in": "Real Estate Law",
+        "fee_structure": [
+            {
+                "service_name": "Property Transactions",
+                "fee": 3000,
+                "details": "Buy/sell agreements"
+            },
+            {
+                "service_name": "Land Use Disputes",
+                "fee": 2500,
+                "details": "Zoning and development cases"
+            },
+            {
+                "service_name": "Title Issues",
+                "fee": 1200,
+                "details": "Title search and dispute resolution"
+            }
+        ],
+        "description": "Experienced real estate attorney assisting clients with property-related legal matters.",
+        "rating": 4.7,
+        "reviews": 35,
+        "total_case": 130,
+        "success_rate": 88,
+        "blogs": [
+            {
+                "title": "Understanding Property Boundaries",
+                "content": "Guidelines for handling property boundary disputes.",
+                "date": "2025-03-05"
+            },
+            {
+                "title": "Zoning Laws and Business Development",
+                "content": "Navigating zoning laws for business growth.",
+                "date": "2025-04-12"
+            }
+        ]
+    },
+    {
+        "name": "Laura Smith",
+        "image": "https://i.ibb.co/NCRq94W/Lawyer15.jpg",
+        "expert_in": "Immigration Law",
+        "fee_structure": [
+            {
+                "service_name": "Visa Applications",
+                "fee": 1500,
+                "details": "Work, family, and student visas"
+            },
+            {
+                "service_name": "Deportation Defense",
+                "fee": 5000,
+                "details": "Representation in immigration court"
+            },
+            {
+                "service_name": "Green Card Processing",
+                "fee": 2500,
+                "details": "Legal assistance in obtaining a green card"
+            }
+        ],
+        "description": "Passionate immigration attorney dedicated to helping individuals achieve their immigration goals.",
+        "rating": 4.6,
+        "reviews": 40,
+        "total_case": 100,
+        "success_rate": 92,
+        "blogs": [
+            {
+                "title": "Common Misconceptions About Immigration",
+                "content": "Debunking myths surrounding immigration law.",
+                "date": "2025-05-20"
+            },
+            {
+                "title": "The Path to Citizenship",
+                "content": "Understanding the process of becoming a U.S. citizen.",
+                "date": "2025-06-28"
+            }
+        ]
+    },
+    {
+        "name": "Daniel Baker",
+        "image": "https://i.ibb.co/MRmgmpx/Lawyer16.jpg",
+        "expert_in": "Personal Injury Law",
+        "fee_structure": [
+            {
+                "service_name": "Auto Accident Claims",
+                "fee": 3500,
+                "details": "Representation in car accident cases"
+            },
+            {
+                "service_name": "Medical Malpractice",
+                "fee": 5000,
+                "details": "Compensation for medical negligence"
+            },
+            {
+                "service_name": "Slip and Fall Cases",
+                "fee": 2000,
+                "details": "Premises liability claims"
+            }
+        ],
+        "description": "Dedicated personal injury attorney committed to obtaining justice for victims.",
+        "rating": 4.9,
+        "reviews": 50,
+        "total_case": 90,
+        "success_rate": 95,
+        "blogs": [
+            {
+                "title": "Steps to Take After a Personal Injury",
+                "content": "Guidelines for handling personal injury cases.",
+                "date": "2025-07-15"
+            },
+            {
+                "title": "Understanding Medical Malpractice Lawsuits",
+                "content": "Key elements in medical malpractice cases.",
+                "date": "2025-08-22"
+            }
+        ]
+    },
+    {
+        "name": "Sophie Turner",
+        "image": "https://i.ibb.co/fGmxRBy/Lawyer17.jpg",
+        "expert_in": "Employment Law",
+        "fee_structure": [
+            {
+                "service_name": "Wrongful Termination",
+                "fee": 3000,
+                "details": "Legal representation in wrongful termination cases"
+            },
+            {
+                "service_name": "Discrimination Claims",
+                "fee": 2500,
+                "details": "Filing and pursuing discrimination claims"
+            },
+            {
+                "service_name": "Employment Contracts",
+                "fee": 1200,
+                "details": "Review and negotiation of employment contracts"
+            }
+        ],
+        "description": "Dedicated employment law attorney advocating for employees' rights in the workplace.",
+        "rating": 4.6,
+        "reviews": 45,
+        "total_case": 95,
+        "success_rate": 91,
+        "blogs": [
+            {
+                "title": "Understanding Workplace Retaliation",
+                "content": "Recognizing and addressing workplace retaliation.",
+                "date": "2025-09-15"
+            },
+            {
+                "title": "Tips for Negotiating Employment Contracts",
+                "content": "Ensuring fair terms in your employment agreement.",
+                "date": "2025-10-22"
+            }
+        ]
+    },
+    {
+        "name": "David White",
+        "image": "https://i.ibb.co/LtyK2mZ/Lawyer18.jpg",
+        "expert_in": "Bankruptcy Law",
+        "fee_structure": [
+            {
+                "service_name": "Chapter 7 Bankruptcy",
+                "fee": 2000,
+                "details": "Assistance in filing for Chapter 7 bankruptcy"
+            },
+            {
+                "service_name": "Debt Settlement",
+                "fee": 2500,
+                "details": "Negotiation with creditors for debt settlement"
+            },
+            {
+                "service_name": "Chapter 13 Bankruptcy",
+                "fee": 3500,
+                "details": "Guidance and representation in Chapter 13 cases"
+            }
+        ],
+        "description": "Experienced bankruptcy attorney helping individuals navigate financial challenges.",
+        "rating": 4.5,
+        "reviews": 30,
+        "total_case": 85,
+        "success_rate": 87,
+        "blogs": [
+            {
+                "title": "Understanding Chapter 13 Bankruptcy",
+                "content": "Key points in Chapter 13 bankruptcy cases.",
+                "date": "2025-11-10"
+            },
+            {
+                "title": "Tips for Rebuilding Credit After Bankruptcy",
+                "content": "Rebuilding your financial health post-bankruptcy.",
+                "date": "2025-12-18"
+            }
+        ]
+    },
+    {
+        "name": "Isabella Martin",
+        "image": "https://i.ibb.co/pX1n40f/Lawyer20.jpg",
+        "expert_in": "Environmental Law",
+        "fee_structure": [
+            {
+                "service_name": "Environmental Compliance",
+                "fee": 3000,
+                "details": "Assistance in complying with environmental regulations"
+            },
+            {
+                "service_name": "Land Use Planning",
+                "fee": 3500,
+                "details": "Guidance on environmentally conscious land development"
+            },
+            {
+                "service_name": "Environmental Litigation",
+                "fee": 5000,
+                "details": "Representation in environmental legal disputes"
+            }
+        ],
+        "description": "Passionate environmental law attorney advocating for sustainable practices.",
+        "rating": 4.8,
+        "reviews": 48,
+        "total_case": 80,
+        "success_rate": 93,
+        "blogs": [
+            {
+                "title": "The Role of Businesses in Environmental Conservation",
+                "content": "Encouraging businesses to adopt eco-friendly practices.",
+                "date": "2026-01-15"
+            },
+            {
+                "title": "Challenges in Environmental Litigation",
+                "content": "Addressing common challenges in environmental legal battles.",
+                "date": "2026-02-22"
+            }
+        ]
+    },
+    {
+        "name": "Lucas Turner",
+        "image": "https://i.ibb.co/nnFLRpB/Lawyer21.jpg",
+        "expert_in": "Business Law",
+        "fee_structure": [
+            {
+                "service_name": "Business Formation",
+                "fee": 2500,
+                "details": "Assistance in forming a legal business entity"
+            },
+            {
+                "service_name": "Contract Drafting",
+                "fee": 2000,
+                "details": "Drafting and reviewing business contracts"
+            },
+            {
+                "service_name": "Business Litigation",
+                "fee": 4000,
+                "details": "Representation in business legal disputes"
+            }
+        ],
+        "description": "Experienced business law attorney providing comprehensive legal solutions to entrepreneurs and corporations.",
+        "rating": 4.9,
+        "reviews": 55,
+        "total_case": 120,
+        "success_rate": 94,
+        "blogs": [
+            {
+                "title": "Legal Considerations for Startups",
+                "content": "Key legal aspects for startups to consider.",
+                "date": "2026-03-10"
+            },
+            {
+                "title": "Resolving Business Disputes Efficiently",
+                "content": "Strategies for efficient resolution of business disputes.",
+                "date": "2026-04-18"
+            }
+        ]
+    },
+    {
+        "name": "Sophie Turner",
+        "image": "https://i.ibb.co/nnFLRpB/Lawyer21.jpg",
+        "expert_in": "Corporate Law",
+        "fee_structure": [
+            {
+                "service_name": "Business Formation",
+                "fee": 2500,
+                "details": "Assistance in forming a legal business entity"
+            },
+            {
+                "service_name": "Contract Drafting",
+                "fee": 2000,
+                "details": "Drafting and reviewing business contracts"
+            },
+            {
+                "service_name": "Mergers and Acquisitions",
+                "fee": 5000,
+                "details": "Legal guidance in mergers and acquisitions"
+            }
+        ],
+        "description": "Experienced corporate attorney providing legal solutions to businesses of all sizes.",
+        "rating": 4.9,
+        "reviews": 60,
+        "total_case": 130,
+        "success_rate": 95,
+        "blogs": [
+            {
+                "title": "Key Considerations in Business Formation",
+                "content": "Factors to consider when forming a business.",
+                "date": "2026-05-15"
+            },
+            {
+                "title": "Navigating Mergers and Acquisitions",
+                "content": "Legal considerations in corporate mergers and acquisitions.",
+                "date": "2026-06-22"
+            }
+        ]
+    },
+    {
+        "name": "Alexandra Davis",
+        "image": "https://i.ibb.co/6cQhkdy/Lawyer22.jpg",
+        "expert_in": "Family Law",
+        "fee_structure": [
+            {
+                "service_name": "Divorce Proceedings",
+                "fee": 4000,
+                "details": "Complete process"
+            },
+            {
+                "service_name": "Child Custody",
+                "fee": 2500,
+                "details": "Negotiation and representation"
+            },
+            {
+                "service_name": "Adoption",
+                "fee": 1500,
+                "details": "Legal paperwork and court filing"
+            }
+        ],
+        "description": "Dedicated family law attorney committed to helping clients navigate legal challenges.",
+        "rating": 4.8,
+        "reviews": 55,
+        "total_case": 110,
+        "success_rate": 92,
+        "blogs": [
+            {
+                "title": "Navigating Child Custody Disputes",
+                "content": "Tips for parents going through custody battles.",
+                "date": "2026-07-20"
+            },
+            {
+                "title": "The Emotional Impact of Divorce on Children",
+                "content": "Addressing the emotional aspects of divorce on children.",
+                "date": "2026-08-28"
+            }
+        ]
+    },
+    {
+        "name": "Christopher Roberts",
+        "image": "https://i.ibb.co/c6q6FXS/Lawyer23.jpg",
+        "expert_in": "Criminal Defense Law",
+        "fee_structure": [
+            {
+                "service_name": "Initial Consultation",
+                "fee": 200,
+                "details": "1-hour meeting"
+            },
+            {
+                "service_name": "Case Representation",
+                "fee": 5000,
+                "details": "Per court appearance"
+            },
+            {
+                "service_name": "Legal Advice",
+                "fee": 300,
+                "details": "Per hour"
+            }
+        ],
+        "description": "Experienced criminal defense attorney with a track record of successful case outcomes.",
+        "rating": 4.9,
+        "reviews": 50,
+        "total_case": 180,
+        "success_rate": 90,
+        "blogs": [
+            {
+                "title": "Defending Against White Collar Crimes",
+                "content": "Strategies for handling white-collar criminal cases.",
+                "date": "2026-09-10"
+            },
+            {
+                "title": "Your Rights During Police Interactions",
+                "content": "Understanding and asserting your rights.",
+                "date": "2026-10-18"
+            }
+        ]
+    },
+    {
+        "name": "Melissa Turner",
+        "image": "https://i.ibb.co/gPgfqK7/Lawyer24.jpg",
+        "expert_in": "Real Estate Law",
+        "fee_structure": [
+            {
+                "service_name": "Property Transactions",
+                "fee": 3000,
+                "details": "Buy/sell agreements"
+            },
+            {
+                "service_name": "Land Use Disputes",
+                "fee": 2500,
+                "details": "Zoning and development cases"
+            },
+            {
+                "service_name": "Title Issues",
+                "fee": 1200,
+                "details": "Title search and dispute resolution"
+            }
+        ],
+        "description": "Experienced real estate attorney assisting clients with property-related legal matters.",
+        "rating": 4.7,
+        "reviews": 40,
+        "total_case": 150,
+        "success_rate": 88,
+        "blogs": [
+            {
+                "title": "Understanding Property Boundaries",
+                "content": "Guidelines for handling property boundary disputes.",
+                "date": "2026-11-05"
+            },
+            {
+                "title": "Zoning Laws and Sustainable Development",
+                "content": "Promoting sustainable development through zoning laws.",
+                "date": "2026-12-12"
+            }
+        ]
+    },
+    {
+        "name": "William Foster",
+        "image": "https://i.ibb.co/SrYRNCZ/Lawyer25.jpg",
+        "expert_in": "Immigration Law",
+        "fee_structure": [
+            {
+                "service_name": "Visa Applications",
+                "fee": 1500,
+                "details": "Work, family, and student visas"
+            },
+            {
+                "service_name": "Deportation Defense",
+                "fee": 5000,
+                "details": "Representation in immigration court"
+            },
+            {
+                "service_name": "Green Card Processing",
+                "fee": 2500,
+                "details": "Legal assistance in obtaining a green card"
+            }
+        ],
+        "description": "Passionate immigration attorney dedicated to helping individuals achieve their immigration goals.",
+        "rating": 4.6,
+        "reviews": 42,
+        "total_case": 120,
+        "success_rate": 92,
+        "blogs": [
+            {
+                "title": "Common Misconceptions About Immigration",
+                "content": "Debunking myths surrounding immigration law.",
+                "date": "2027-01-15"
+            },
+            {
+                "title": "The Path to Citizenship",
+                "content": "Understanding the process of becoming a U.S. citizen.",
+                "date": "2027-02-22"
+            }
+        ]
+    },
+    {
+        "name": "Emily Mitchell",
+        "image": "https://i.ibb.co/2W4hMWf/Lawyer26.jpg",
+        "expert_in": "Personal Injury Law",
+        "fee_structure": [
+            {
+                "service_name": "Auto Accident Claims",
+                "fee": 3500,
+                "details": "Representation in car accident cases"
+            },
+            {
+                "service_name": "Medical Malpractice",
+                "fee": 5000,
+                "details": "Compensation for medical negligence"
+            },
+            {
+                "service_name": "Slip and Fall Cases",
+                "fee": 2000,
+                "details": "Premises liability claims"
+            }
+        ],
+        "description": "Dedicated personal injury attorney committed to obtaining justice for victims.",
+        "rating": 4.8,
+        "reviews": 48,
+        "total_case": 100,
+        "success_rate": 94,
+        "blogs": [
+            {
+                "title": "Steps to Take After a Personal Injury",
+                "content": "Guidelines for handling personal injury cases.",
+                "date": "2027-03-10"
+            },
+            {
+                "title": "Understanding Medical Malpractice Lawsuits",
+                "content": "Key elements in medical malpractice cases.",
+                "date": "2027-04-18"
+            }
+        ]
+    },
+    {
+        "name": "Jonathan Davis",
+        "image": "https://i.ibb.co/JQ5WhRQ/Lawyer27.jpg",
+        "expert_in": "Employment Law",
+        "fee_structure": [
+            {
+                "service_name": "Wrongful Termination",
+                "fee": 3000,
+                "details": "Legal representation in wrongful termination cases"
+            },
+            {
+                "service_name": "Discrimination Claims",
+                "fee": 2500,
+                "details": "Filing and pursuing discrimination claims"
+            },
+            {
+                "service_name": "Employment Contracts",
+                "fee": 1200,
+                "details": "Review and negotiation of employment contracts"
+            }
+        ],
+        "description": "Dedicated employment law attorney advocating for employees' rights in the workplace.",
+        "rating": 4.7,
+        "reviews": 45,
+        "total_case": 95,
+        "success_rate": 91,
+        "blogs": [
+            {
+                "title": "Addressing Workplace Retaliation",
+                "content": "Recognizing and addressing workplace retaliation.",
+                "date": "2027-05-15"
+            },
+            {
+                "title": "Tips for Negotiating Employment Contracts",
+                "content": "Ensuring fair terms in your employment agreement.",
+                "date": "2027-06-22"
+            }
+        ]
+    },
+    {
+        "name": "Isaac Miller",
+        "image": "https://i.ibb.co/C1Zp937/Lawyer28.jpg",
+        "expert_in": "Bankruptcy Law",
+        "fee_structure": [
+            {
+                "service_name": "Chapter 7 Bankruptcy",
+                "fee": 2000,
+                "details": "Assistance in filing for Chapter 7 bankruptcy"
+            },
+            {
+                "service_name": "Debt Settlement",
+                "fee": 2500,
+                "details": "Negotiation with creditors for debt settlement"
+            },
+            {
+                "service_name": "Chapter 13 Bankruptcy",
+                "fee": 3500,
+                "details": "Guidance and representation in Chapter 13 cases"
+            }
+        ],
+        "description": "Experienced bankruptcy attorney helping individuals navigate financial challenges.",
+        "rating": 4.6,
+        "reviews": 35,
+        "total_case": 85,
+        "success_rate": 87,
+        "blogs": [
+            {
+                "title": "Understanding Chapter 13 Bankruptcy",
+                "content": "Key points in Chapter 13 bankruptcy cases.",
+                "date": "2027-07-10"
+            },
+            {
+                "title": "Tips for Rebuilding Credit After Bankruptcy",
+                "content": "Rebuilding your financial health post-bankruptcy.",
+                "date": "2027-08-18"
+            }
+        ]
+    },
+    {
+        "name": "Madison White",
+        "image": "https://i.ibb.co/NnvXZfF/Lawyer29.jpg",
+        "expert_in": "Environmental Law",
+        "fee_structure": [
+            {
+                "service_name": "Environmental Compliance",
+                "fee": 3000,
+                "details": "Assistance in complying with environmental regulations"
+            },
+            {
+                "service_name": "Land Use Planning",
+                "fee": 3500,
+                "details": "Guidance on environmentally conscious land development"
+            },
+            {
+                "service_name": "Environmental Litigation",
+                "fee": 5000,
+                "details": "Representation in environmental legal disputes"
+            }
+        ],
+        "description": "Passionate environmental law attorney advocating for sustainable practices.",
+        "rating": 4.9,
+        "reviews": 50,
+        "total_case": 80,
+        "success_rate": 93,
+        "blogs": [
+            {
+                "title": "The Role of Businesses in Environmental Conservation",
+                "content": "Encouraging businesses to adopt eco-friendly practices.",
+                "date": "2027-09-15"
+            },
+            {
+                "title": "Challenges in Environmental Litigation",
+                "content": "Addressing common challenges in environmental legal battles.",
+                "date": "2027-10-22"
+            }
+        ]
+    },
+    {
+        "name": "Oliver Taylor",
+        "image": "https://i.ibb.co/PCJYNPq/Lawyer30.jpg",
+        "expert_in": "Intellectual Property Law",
+        "fee_structure": [
+            {
+                "service_name": "Trademark Registration",
+                "fee": 1200,
+                "details": "Filing and registration process"
+            },
+            {
+                "service_name": "Patent Applications",
+                "fee": 5000,
+                "details": "Assistance in obtaining patents"
+            },
+            {
+                "service_name": "Copyright Protection",
+                "fee": 1500,
+                "details": "Legal advice on copyright matters"
+            }
+        ],
+        "description": "Experienced intellectual property attorney helping clients protect their creative works.",
+        "rating": 4.7,
+        "reviews": 40,
+        "total_case": 100,
+        "success_rate": 89,
+        "blogs": [
+            {
+                "title": "The Importance of Trademarks",
+                "content": "How trademarks safeguard your brand.",
+                "date": "2027-11-15"
+            },
+            {
+                "title": "Navigating the Patent Process",
+                "content": "Understanding the steps to obtain a patent.",
+                "date": "2027-12-22"
+            }
+        ]
+    }
+]

@@ -13,6 +13,9 @@ import Consultation from '../Pages/Consultation/Consultation';
 import About from '../Pages/About/About';
 import SignIn from '../Pages/SignIn/SignIn';
 import Signup from '../Pages/Signup/Signup';
+import LawyerDetails from '../Pages/Cases/LawyerDetails';
+import BlogDetails from '../Pages/Blogs/BlogDetails';
+import PracticeSection from '../Pages/Home/PracticeSection/PracticeSection';
 
 const router = createBrowserRouter([
     {
@@ -25,8 +28,8 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "/services",
-                element: <Services />
+                path: "/service",
+                element: <PracticeSection />
             },
             {
                 path: "/cases",
@@ -55,6 +58,14 @@ const router = createBrowserRouter([
             {
                 path: "/sign-up",
                 element: <Signup />
+            },
+            {
+                path: "/lawyer-details/:id",
+                element: <LawyerDetails />
+            },
+            {
+                path: "/blog-details/:id",
+                element: <BlogDetails />
             }
         ]
     },

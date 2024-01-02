@@ -23,13 +23,13 @@ const Navbar = () => {
     const navItem = <>
         <li><NavLink to="/" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Home</NavLink></li>
 
-        <li><NavLink to="/services" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Services <HiChevronRight className='h-5 w-5' /></NavLink></li>
+        <li><NavLink to="/service" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Services <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
         <li><NavLink to="/cases" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Lawyer <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
         <li><NavLink to="/blog" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Blog <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
-        <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Contact Us <HiChevronRight className='h-5 w-5' /></NavLink></li>
+        {/* <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Contact Us <HiChevronRight className='h-5 w-5' /></NavLink></li> */}
 
         {
             user ? <>
