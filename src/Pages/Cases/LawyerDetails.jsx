@@ -42,7 +42,7 @@ const LawyerDetails = () => {
                     {
                         lawyerData?.fee_structure?.map((option, indx) => <div key={indx} className='rounded-xl px-3 py-5 shadow-md shadow-primary cursor-pointer hover:shadow-xl transition-shadow duration-500 space-y-3 h-[250px]'>
                             <h2 className='secondFont font-semibold text-xl text-primary'>{option?.service_name}</h2>
-                            <p className='font-medium'>Fee: <span className='font-semibold text-primary'>{option?.fee}</span></p>
+                            <p className='font-medium'>Fee: <span className='font-semibold text-primary'>{option?.fee}/hour</span></p>
                             <p className='font-medium'>services included: {option?.details}</p>
                             <div className='absolute bottom-5'>
                                 <Link to={`/quote/${option?.service_name}`} className='myBtn'>

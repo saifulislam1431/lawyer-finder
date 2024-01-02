@@ -16,6 +16,7 @@ import Signup from '../Pages/Signup/Signup';
 import LawyerDetails from '../Pages/Cases/LawyerDetails';
 import BlogDetails from '../Pages/Blogs/BlogDetails';
 import PracticeSection from '../Pages/Home/PracticeSection/PracticeSection';
+import ServiceDetails from '../Pages/Home/PracticeSection/ServiceDetails';
 
 const router = createBrowserRouter([
     {
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
             {
                 path: "/blog-details/:id",
                 element: <BlogDetails />
+            },
+            {
+                path: "/service-details/:name",
+                element: <ServiceDetails />
             }
         ]
     },

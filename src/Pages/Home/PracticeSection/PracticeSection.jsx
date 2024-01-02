@@ -7,6 +7,7 @@ import lawIcon3 from "../../../assets/icons/law4.png";
 import lawIcon4 from "../../../assets/icons/law5.png";
 import lawIcon5 from "../../../assets/icons/law6.png";
 import { HiArrowRightCircle } from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 const PracticeSection = () => {
     return (
@@ -20,7 +21,7 @@ const PracticeSection = () => {
                         <h1 className='brandFont text-2xl font-semibold'>Business Law</h1>
                         <p className='text-sm my-3'>Unravel the complexities of corporate legal matters with skilled professionals.</p>
 
-                        <HiArrowRightCircle className='h-8 w-8 text-primary' />
+                        <Link to={`/service-details/Business Law`}><HiArrowRightCircle className='h-8 w-8 text-primary' /></Link>
                     </div>
 
                     <div className='flex flex-col items-center justify-between gap-3 text-center border-l border-r p-5 bg-gradient-to-t from-[#e6e3e3] to-[#F3F3F3]'>
@@ -28,7 +29,7 @@ const PracticeSection = () => {
                         <h1 className='brandFont text-2xl font-semibold'>Criminal Law</h1>
                         <p className='text-sm my-3'>Seek justice and defense with experienced criminal attorneys by your side.</p>
 
-                        <HiArrowRightCircle className='h-8 w-8 text-primary' />
+                        <Link to={`/service-details/Criminal Law`}><HiArrowRightCircle className='h-8 w-8 text-primary' /></Link>
                     </div>
 
                     <div className='flex flex-col items-center justify-between gap-3 text-center p-5'>
@@ -36,7 +37,7 @@ const PracticeSection = () => {
                         <h1 className='brandFont text-2xl font-semibold'>Child Support</h1>
                         <p className='text-sm my-3'>Ensure the best outcomes for your child with expert guidance in child support matters.</p>
 
-                        <HiArrowRightCircle className='h-8 w-8 text-primary' />
+                        <Link to={`/service-details/Child Support`}><HiArrowRightCircle className='h-8 w-8 text-primary' /></Link>
                     </div>
                 </div>
 
@@ -46,7 +47,7 @@ const PracticeSection = () => {
                         <h1 className='brandFont text-2xl font-semibold'>Education Law</h1>
                         <p className='text-sm my-3'>Safeguard your educational rights with knowledgeable legal support in the field of education law.</p>
 
-                        <HiArrowRightCircle className='h-8 w-8 text-primary' />
+                        <Link to={`/service-details/Education Law`}><HiArrowRightCircle className='h-8 w-8 text-primary' /></Link>
                     </div>
 
                     <div className='flex flex-col items-center justify-between gap-3 text-center border-l border-r p-5'>
@@ -54,7 +55,7 @@ const PracticeSection = () => {
                         <h1 className='brandFont text-2xl font-semibold'>Divorce Law</h1>
                         <p className='text-sm my-3'>Navigating the complexities of divorce is easier with our specialized attorneys by your side.</p>
 
-                        <HiArrowRightCircle className='h-8 w-8 text-primary' />
+                        <Link to={`/service-details/Divorce Law`}><HiArrowRightCircle className='h-8 w-8 text-primary' /></Link>
                     </div>
 
                     <div className='flex flex-col items-center justify-between gap-3 text-center p-5'>
@@ -62,7 +63,7 @@ const PracticeSection = () => {
                         <h1 className='brandFont text-2xl font-semibold'>Tax Law</h1>
                         <p className='text-sm my-3'>From personal to business taxes, find the expertise you need to navigate the intricate landscape of tax law.</p>
 
-                        <HiArrowRightCircle className='h-8 w-8 text-primary' />
+                        <Link to={`/service-details/Tax Law`}><HiArrowRightCircle className='h-8 w-8 text-primary' /></Link>
                     </div>
                 </div>
             </div>
