@@ -32,3 +32,11 @@ body {
 .myBtnSec {
     @apply px-4 py-1 inline-flex items-center text-lg border-b border-primary bg-primary text-neutral font-semibold rounded hover:bg-transparent hover:text-primary transition-all duration-500 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed w-full text-center
 }
+
+.dash-active {
+    @apply w-full bg-base-100 font-bold text-primary py-3 px-3 rounded-tl-lg rounded-bl-lg
+}
+
+.dash-default {
+    @apply font-semibold py-3 px-3 text-neutral
+}

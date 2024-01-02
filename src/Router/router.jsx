@@ -17,6 +17,8 @@ import LawyerDetails from '../Pages/Cases/LawyerDetails';
 import BlogDetails from '../Pages/Blogs/BlogDetails';
 import PracticeSection from '../Pages/Home/PracticeSection/PracticeSection';
 import ServiceDetails from '../Pages/Home/PracticeSection/ServiceDetails';
+import PrivateRoute from './PrivateRoute';
+import DashBoard from '../Pages/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
     {
@@ -71,6 +73,44 @@ const router = createBrowserRouter([
             {
                 path: "/service-details/:name",
                 element: <ServiceDetails />
+            },
+            {
+                path: "/dashboard",
+                element: <PrivateRoute><DashBoard /></PrivateRoute>,
+                // children:[
+                //     {
+                //         path:"manageProducts",
+                //         element: <PrivateRoute><AdminRoute><ManageProducts/></AdminRoute></PrivateRoute>
+                //     },
+                //     {
+                //         path:"add-product",
+                //         element:<PrivateRoute><AdminRoute><AddProduct /></AdminRoute></PrivateRoute>
+                //     },
+                //     {
+                //         path:"manageUsers",
+                //         element:<PrivateRoute><AdminRoute><ManageUsers /></AdminRoute></PrivateRoute>
+                //     },
+                //     {
+                //         path:"manageOrders",
+                //         element:<PrivateRoute><AdminRoute><ManageOrders/></AdminRoute></PrivateRoute>
+                //     },
+                //     {
+                //         path:"manageReviews",
+                //         element:<PrivateRoute><AdminRoute><ManageReviews /></AdminRoute></PrivateRoute>
+                //     },
+                //     {
+                //         path:"updateProduct/:id",
+                //         element:<PrivateRoute><AdminRoute><UpdateProducts /></AdminRoute></PrivateRoute>
+                //     },
+                //     {
+                //         path:"my-orders",
+                //         element:<PrivateRoute><UserOrders /></PrivateRoute>
+                //     },
+                //     {
+                //         path:"track-orders",
+                //         element:<PrivateRoute><TrackOrders /></PrivateRoute>
+                //     }
+                // ]
             }
         ]
     },

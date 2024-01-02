@@ -62,16 +62,16 @@ const SignIn = () => {
                     role: "User"
                 }
 
-                // const resData = await axios.post('https://dl-customs-server.vercel.app/add-new-users', newData);
-                // if (resData.data.insertedId) {
-                //     navigate(from, { replace: true })
-                //     Swal.fire({
-                //         title: 'Success!',
-                //         text: 'Sign up successful!',
-                //         icon: 'success',
-                //         confirmButtonText: 'Ok'
-                //     })
-                // }
+                const resData = await axios.post('http://localhost:5000/users', newData);
+                if (resData.data.insertedId) {
+                    navigate(from, { replace: true })
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Sign up successful!',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                    })
+                }
                 Swal.fire({
                     title: 'Success!',
                     text: 'Sign up successful and check your email to verify!',

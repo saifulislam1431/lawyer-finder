@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { app } from '../firebase/firebase.config';
+import axios from 'axios';
 
 const auth = getAuth(app);
 export const UserAuth = createContext(null);
@@ -48,19 +49,19 @@ const Auth = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
-            // if (currentUser) {
-            //     // const email= currentUser.email;
-            //     axios.post("https://dl-customs-server.vercel.app/jwt", {
-            //         email: currentUser.email
-            //     }).then(data => {
-            //         // console.log(data.data.token);
-            //         localStorage.setItem("access-token", data.data.token)
-            //         setLoading(false)
-            //     })
-            // } else {
-            //     setLoading(false)
-            //     localStorage.removeItem("access-token")
-            // }
+            if (currentUser) {
+                // const email= currentUser.email;
+                axios.post("http://localhost:5000/jwt", {
+                    email: currentUser.email
+                }).then(data => {
+                    // console.log(data.data.token);
+                    localStorage.setItem("access-token", data?.data?.token)
+                    setLoading(false)
+                })
+            } else {
+                setLoading(false)
+                localStorage.removeItem("access-token")
+            }
         })
         return () => unsubscribe();
     }, [])

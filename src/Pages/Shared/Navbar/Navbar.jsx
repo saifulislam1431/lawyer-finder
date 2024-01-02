@@ -33,7 +33,7 @@ const Navbar = () => {
 
         {
             user ? <>
-                <li><NavLink to="/profile" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Profile <HiChevronRight className='h-5 w-5' /></NavLink></li>
+                <li><NavLink to="/dashboard" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Profile <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
                 <li><button className='navDefault' onClick={handleOut}>Logout <HiChevronRight className='h-5 w-5' /></button></li>
             </> : <li><NavLink to="/sign-in" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Sign In <HiChevronRight className='h-5 w-5' /></NavLink></li>

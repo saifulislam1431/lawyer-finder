@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import imgLogo from "../../assets/Banner/imglogo.png"
 import useAuth from '../../hooks/useAuth';
 import Swal from 'sweetalert2';
+import axios from 'axios';
 
 
 const token = import.meta.env.VITE_IMAGE_TOKEN;
@@ -52,14 +53,14 @@ const Signup = () => {
         })
             .then(res => res.json())
             .then(ResData => {
-                console.log(ResData.data.url)
+                console.log(ResData)
                 if (ResData) {
                     const newUser = {
-                        email: data.email,
-                        name: data.name,
-                        phone: data.phone,
-                        gender: data.gender,
-                        photo: ResData.data.url,
+                        email: data?.email,
+                        name: data?.name,
+                        phone: data?.phone,
+                        gender: data?.gender,
+                        photo: ResData?.data?.url || "https://i.ibb.co/yyYWbyJ/user.png",
                         role: "User"
 
                     }
@@ -67,29 +68,29 @@ const Signup = () => {
 
                     signUp(data?.email, data?.password)
                         .then((res) => {
-                            const loggedUser = res.user;
+                            const loggedUser = res?.user;
 
                             updateUser(loggedUser, data?.name)
                                 .then(async () => {
                                     userVerify()
                                         .then(async () => {
-                                            Swal.fire({
-                                                title: 'Success!',
-                                                text: 'Sign up successful and check your email to verify!',
-                                                icon: 'success',
-                                                confirmButtonText: 'Ok'
-                                            })
-                                            // const res = await axios.post('https://dl-customs-server.vercel.app/add-new-users', newUser);
+                                            // Swal.fire({
+                                            //     title: 'Success!',
+                                            //     text: 'Sign up successful and check your email to verify!',
+                                            //     icon: 'success',
+                                            //     confirmButtonText: 'Ok'
+                                            // })
+                                            const res = await axios.post('http://localhost:5000/users', newUser);
                                             // console.log(res.data)
-                                            // if (res.data.insertedId) {
-                                            //     navigate(from, { replace: true })
-                                            //     Swal.fire({
-                                            //         title: 'Success!',
-                                            //         text: 'Sign up successful and check your email to verify!',
-                                            //         icon: 'success',
-                                            //         confirmButtonText: 'Ok'
-                                            //     })
-                                            // }
+                                            if (res?.data?.insertedId) {
+                                                navigate(from, { replace: true })
+                                                Swal.fire({
+                                                    title: 'Success!',
+                                                    text: 'Sign up successful and check your email to verify!',
+                                                    icon: 'success',
+                                                    confirmButtonText: 'Ok'
+                                                })
+                                            }
                                         })
                                 })
 
