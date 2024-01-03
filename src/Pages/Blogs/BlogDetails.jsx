@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import SectionHead from '../../Components/SectionHead';
+import moment from 'moment';
 
 const BlogDetails = () => {
     const { id } = useParams();
@@ -21,7 +22,7 @@ const BlogDetails = () => {
                     <div>
                         <h1 className="text-6xl font-bold text-primary brandFont">{blog?.title}</h1>
                         <p className="pt-4 text-lg font-semibold">By {blog?.author}</p>
-                        <p className=" text-lg font-semibold">{blog?.date}</p>
+                        <p className=" text-lg font-semibold">{moment(blog?.date).format("LLL")}</p>
                     </div>
                 </div>
             </div>

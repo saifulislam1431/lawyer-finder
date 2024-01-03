@@ -5,12 +5,15 @@ import logo from "../../assets/logo/logo1.png"
 import { HiBars3BottomLeft, HiCreditCard, HiHome, HiMiniAdjustmentsHorizontal, HiMiniListBullet, HiMiniPencilSquare, HiMiniPlus, HiMiniUserGroup, HiOutlineCheckBadge, HiOutlinePencilSquare, HiOutlinePlus, HiOutlineRss, HiOutlineStar, HiOutlineUserCircle, HiOutlineUserGroup, HiOutlineUserPlus, HiPencilSquare, HiShoppingBag } from 'react-icons/hi2';
 
 import { IoIosHeadset, IoMdCheckmarkCircleOutline } from "react-icons/io";
+import useAdmin from '../../hooks/useAdmin';
+import useAttorney from '../../hooks/useAttorney';
 
 
 const DashBoard = () => {
-    // const [isAdmin] = useAdmin();
-    const isAdmin = false;
-    const isAttorney = false;
+    const [isAdmin] = useAdmin();
+    const [isAttorney] = useAttorney();
+    // const isAdmin = false;
+    // const isAttorney = false;
 
     return (
         <div className="drawer lg:drawer-open">
