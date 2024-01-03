@@ -19,6 +19,18 @@ import PracticeSection from '../Pages/Home/PracticeSection/PracticeSection';
 import ServiceDetails from '../Pages/Home/PracticeSection/ServiceDetails';
 import PrivateRoute from './PrivateRoute';
 import DashBoard from '../Pages/Dashboard/Dashboard';
+import MangeBlogs from '../Pages/Dashboard/AdminDashboard/MangeBlogs';
+import ManageUsers from '../Pages/Dashboard/AdminDashboard/ManageUsers';
+import Support from '../Pages/Dashboard/AdminDashboard/Support';
+import ManageBarAssociations from '../Pages/Dashboard/AdminDashboard/ManageBarAssociations';
+import AttorneyProfile from '../Pages/Dashboard/AttorneyDashboard/AttorneyProfile';
+import FeeStructure from '../Pages/Dashboard/AttorneyDashboard/FeeStructure';
+import HireIntern from '../Pages/Dashboard/AttorneyDashboard/HireIntern';
+import WriteBlog from '../Pages/Dashboard/AttorneyDashboard/WriteBlog';
+import MyProfile from '../Pages/Dashboard/UserDashboard/MyProfile';
+import PostForSolution from '../Pages/Dashboard/UserDashboard/PostForSolution';
+import ApplyIntern from '../Pages/Dashboard/UserDashboard/ApplyIntern';
+import WriteFeedback from '../Pages/Dashboard/UserDashboard/WriteFeedback';
 
 const router = createBrowserRouter([
     {
@@ -77,40 +89,56 @@ const router = createBrowserRouter([
             {
                 path: "/dashboard",
                 element: <PrivateRoute><DashBoard /></PrivateRoute>,
-                // children:[
-                //     {
-                //         path:"manageProducts",
-                //         element: <PrivateRoute><AdminRoute><ManageProducts/></AdminRoute></PrivateRoute>
-                //     },
-                //     {
-                //         path:"add-product",
-                //         element:<PrivateRoute><AdminRoute><AddProduct /></AdminRoute></PrivateRoute>
-                //     },
-                //     {
-                //         path:"manageUsers",
-                //         element:<PrivateRoute><AdminRoute><ManageUsers /></AdminRoute></PrivateRoute>
-                //     },
-                //     {
-                //         path:"manageOrders",
-                //         element:<PrivateRoute><AdminRoute><ManageOrders/></AdminRoute></PrivateRoute>
-                //     },
-                //     {
-                //         path:"manageReviews",
-                //         element:<PrivateRoute><AdminRoute><ManageReviews /></AdminRoute></PrivateRoute>
-                //     },
-                //     {
-                //         path:"updateProduct/:id",
-                //         element:<PrivateRoute><AdminRoute><UpdateProducts /></AdminRoute></PrivateRoute>
-                //     },
-                //     {
-                //         path:"my-orders",
-                //         element:<PrivateRoute><UserOrders /></PrivateRoute>
-                //     },
-                //     {
-                //         path:"track-orders",
-                //         element:<PrivateRoute><TrackOrders /></PrivateRoute>
-                //     }
-                // ]
+                children: [
+                    {
+                        path: "manage-blog",
+                        element: <PrivateRoute><MangeBlogs /></PrivateRoute>
+                    },
+                    {
+                        path: "manage-users",
+                        element: <PrivateRoute><ManageUsers /></PrivateRoute>
+                    },
+                    {
+                        path: "manage-supports",
+                        element: <PrivateRoute><Support /></PrivateRoute>
+                    },
+                    {
+                        path: "manage-bar-association",
+                        element: <PrivateRoute><ManageBarAssociations /></PrivateRoute>
+                    },
+                    {
+                        path: "attorney-profile",
+                        element: <PrivateRoute><AttorneyProfile /></PrivateRoute>
+                    },
+                    {
+                        path: "fee-structure",
+                        element: <PrivateRoute><FeeStructure /></PrivateRoute>
+                    },
+                    {
+                        path: "hire-intern",
+                        element: <PrivateRoute><HireIntern /></PrivateRoute>
+                    },
+                    {
+                        path: "write-blog",
+                        element: <PrivateRoute><WriteBlog /></PrivateRoute>
+                    },
+                    {
+                        path: "my-profile",
+                        element: <PrivateRoute><MyProfile /></PrivateRoute>
+                    },
+                    {
+                        path: "post-case",
+                        element: <PrivateRoute><PostForSolution /></PrivateRoute>
+                    },
+                    {
+                        path: "apply-intern",
+                        element: <PrivateRoute><ApplyIntern /></PrivateRoute>
+                    },
+                    {
+                        path: "write-feedback",
+                        element: <PrivateRoute><WriteFeedback /></PrivateRoute>
+                    }
+                ]
             }
         ]
     },
