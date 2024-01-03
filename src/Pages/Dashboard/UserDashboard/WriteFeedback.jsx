@@ -87,27 +87,6 @@ const WriteFeedback = () => {
                                     <div className="modal" role="dialog">
                                         <div className="modal-box">
                                             <h3 className="font-bold text-lg text-primary">Leave a feedback for {lawyer?.name}</h3>
-                                            {/* <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-4 w-full my-7'>
-
-                                                <label className='font-bold brandFont'>Rating<sup className='text-error'>*</sup></label>
-                                                <input type='text' placeholder='Enter Your Rating'
-                                                    {...register("rating", { required: true })}
-                                                    aria-invalid={errors?.rating ? "true" : "false"}
-                                                    className='inputField' />
-                                                {errors?.rating?.type === 'required' && <p role="alert" className='text-error font-medium'>Rating is required</p>}
-
-                                                <label className='font-bold brandFont'>Comment<sup className='text-error'>*</sup></label>
-                                                <textarea rows="5" cols="10" placeholder="Write about attorney's professionalism and efficiency"
-                                                    {...register("comment", { required: true })}
-                                                    aria-invalid={errors.message ? "true" : "false"}
-                                                    className='inputField' />
-                                                {errors.comment?.type === 'required' && <p role="alert" className='text-error font-medium'>Comment Letter is required</p>}
-
-                                                <div className='text-center'>
-                                                    <button className='myBtn text-center'>Submit</button>
-                                                </div>
-                                            </form> */}
-
                                             <div className='flex flex-col space-y-4 w-full my-7'>
 
                                                 <label className='font-bold brandFont'>Rating<sup className='text-error'>*</sup></label>
