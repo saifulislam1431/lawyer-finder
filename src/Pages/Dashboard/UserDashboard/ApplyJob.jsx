@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import DashHead from '../../../Components/DashHead';
 import { useForm } from 'react-hook-form';
 import useProfile from '../../../hooks/useProfile';
+import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import Swal from 'sweetalert2';
 
 const ApplyJob = () => {
     const [userInfo] = useProfile();
-    console.log(userInfo);
+    const navigate = useNavigate();
+    // console.log(userInfo);
+    const [axiosSecure] = useAxiosSecure();
     const { register, formState: { errors }, handleSubmit, reset, formState, watch } = useForm();
 
 
@@ -18,10 +22,37 @@ const ApplyJob = () => {
             .then(res => res.json())
             .then(data => setPost(data))
     }, [id])
-    console.log(post);
+    // console.log(post);
 
-    const onSubmit = (data) => {
-        console.log(data); // Handle form submission logic here
+    const onSubmit = async (data) => {
+
+        const newData = {
+            law_firm: post?.law_firm,
+            duration: post?.duration,
+            job_type: post?.job_type,
+            position: post?.position,
+            author: post?.contact_email,
+            working_hours: post?.working_hours,
+            applicant_name: data?.name,
+            applicant_email: data?.email,
+            applicant_number: data?.number,
+            applicant_resume: data?.resume,
+            applicant_cover_letter: data?.cover_letter
+
+        }
+
+        const response = await axiosSecure.post("/create-job-application", newData)
+        if (response?.data?.insertedId) {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Successfully applied!',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+            navigate("/dashboard/apply-intern")
+        }
+
+        // console.log(newData);
     };
     return (
         <section className='w-full px-6'>
