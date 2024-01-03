@@ -32,6 +32,7 @@ import PostForSolution from '../Pages/Dashboard/UserDashboard/PostForSolution';
 import ApplyIntern from '../Pages/Dashboard/UserDashboard/ApplyIntern';
 import WriteFeedback from '../Pages/Dashboard/UserDashboard/WriteFeedback';
 import ApplyJob from '../Pages/Dashboard/UserDashboard/ApplyJob';
+import CreateAttorneyProfile from '../Pages/Dashboard/UserDashboard/CreateAttorneyProfile';
 
 const router = createBrowserRouter([
     {
@@ -142,6 +143,10 @@ const router = createBrowserRouter([
                     {
                         path: "apply-job-post/:id",
                         element: <PrivateRoute><ApplyJob /></PrivateRoute>
+                    },
+                    {
+                        path: "create-attorney-profile",
+                        element: <PrivateRoute><CreateAttorneyProfile /></PrivateRoute>
                     }
                 ]
             }
