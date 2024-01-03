@@ -31,6 +31,7 @@ import MyProfile from '../Pages/Dashboard/UserDashboard/MyProfile';
 import PostForSolution from '../Pages/Dashboard/UserDashboard/PostForSolution';
 import ApplyIntern from '../Pages/Dashboard/UserDashboard/ApplyIntern';
 import WriteFeedback from '../Pages/Dashboard/UserDashboard/WriteFeedback';
+import ApplyJob from '../Pages/Dashboard/UserDashboard/ApplyJob';
 
 const router = createBrowserRouter([
     {
@@ -137,6 +138,10 @@ const router = createBrowserRouter([
                     {
                         path: "write-feedback",
                         element: <PrivateRoute><WriteFeedback /></PrivateRoute>
+                    },
+                    {
+                        path: "apply-job-post/:id",
+                        element: <PrivateRoute><ApplyJob /></PrivateRoute>
                     }
                 ]
             }

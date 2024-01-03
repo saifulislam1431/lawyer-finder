@@ -19,7 +19,7 @@ const ApplyIntern = () => {
                             <p>{job?.job_type}</p>
                             <p>{job?.working_hours}</p>
                             <div className="card-actions justify-end">
-                                <Link className='myBtn' to={`/apply-job-post/${job?._id}`}>Apply</Link>
+                                <Link className='myBtn' to={`/dashboard/apply-job-post/${job?._id}`}>Apply</Link>
                             </div>
                         </div>
                     </div>)
