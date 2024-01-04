@@ -10,7 +10,7 @@ const token = import.meta.env.VITE_IMAGE_TOKEN;
 
 const AttorneyProfile = () => {
     const [attorneyInfo, refetch] = useAttorneyProfile();
-    console.log(attorneyInfo);
+    // console.log(attorneyInfo);
     const [axiosSecure] = useAxiosSecure();
 
     const [name, setName] = useState("");
@@ -20,6 +20,7 @@ const AttorneyProfile = () => {
     const [total_case, setTotalCase] = useState("");
     const [rating, setRating] = useState("");
     const [success_rate, setSuccessRate] = useState("");
+    const [phone, setPhone] = useState("");
 
     const hosting_url = `https://api.imgbb.com/1/upload?key=${token}`
     const { register, formState: { errors }, handleSubmit, reset, formState, watch } = useForm();
@@ -68,10 +69,12 @@ const AttorneyProfile = () => {
             total_case: total_case === "" || null ? attorneyInfo?.total_case : total_case,
             rating: rating === "" || null ? attorneyInfo?.rating : rating,
             success_rate: success_rate === "" || null ? attorneyInfo?.success_rate : success_rate,
+            phone: phone === "" || null ? attorneyInfo?.phone : phone
 
         }
-        console.log(newData);
+        // console.log(newData);
         const response = await axiosSecure.patch(`/edit-attorney-profile/${id}`, newData)
+        console.log(response);
         if (response?.data?.modifiedCount > 0) {
             Swal.fire({
                 title: 'Success!',
@@ -90,6 +93,7 @@ const AttorneyProfile = () => {
             let modalCheckbox = document.getElementById(id);
             modalCheckbox.checked = false;
         }
+
     }
     return (
         <section>
@@ -164,6 +168,11 @@ const AttorneyProfile = () => {
                                         <input type='email' defaultValue={attorneyInfo?.email ? attorneyInfo?.email : ""} required placeholder='Enter Your Email'
                                             className='inputField' onChange={(e) => setEmail(e.target.value)} />
                                         {errors?.rating?.type === 'required' && <p role="alert" className='text-error font-medium'>Email is required</p>}
+
+                                        <label className='font-bold brandFont'>Phone<sup className='text-error'>*</sup></label>
+                                        <input type='tel' defaultValue={attorneyInfo?.phone ? attorneyInfo?.phone : ""} required placeholder='Enter Your Phone'
+                                            className='inputField' onChange={(e) => setPhone(e.target.value)} />
+                                        {errors?.rating?.type === 'required' && <p role="alert" className='text-error font-medium'>Phone is required</p>}
 
                                         <label className='font-bold brandFont'>Expert In<sup className='text-error'>*</sup></label>
                                         <input type='text' defaultValue={attorneyInfo?.expert_in ? attorneyInfo?.expert_in : ""} required placeholder='Expert In'

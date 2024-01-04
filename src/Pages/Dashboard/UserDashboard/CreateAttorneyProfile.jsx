@@ -71,6 +71,21 @@ const CreateAttorneyProfile = () => {
                         />
                     </div>
 
+                    {/* Attorney Email */}
+                    <div className="mb-4">
+                        <label htmlFor="phone" className="block text-sm font-medium text-gray-600">
+                            Attorney Phone
+                        </label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            defaultValue={userInfo?.phone ? userInfo?.phone : ""}
+                            className="mt-1 p-2 w-full border border-gray-300 rounded-md"
+                            {...register("phone", { required: true })}
+                        />
+                    </div>
+
                     {/* Attorney Image URL */}
                     <div className="mb-4">
                         <label htmlFor="image" className="block text-sm font-medium text-gray-600">

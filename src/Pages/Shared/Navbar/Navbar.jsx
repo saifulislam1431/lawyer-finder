@@ -4,8 +4,12 @@ import { HiChevronRight } from "react-icons/hi2";
 import logo from "../../../assets/logo/logo1.png"
 import useAuth from '../../../hooks/useAuth';
 import Swal from 'sweetalert2';
+import useAdmin from '../../../hooks/useAdmin';
+import useAttorney from '../../../hooks/useAttorney';
 
 const Navbar = () => {
+    const [isAdmin] = useAdmin();
+    const [isAttorney] = useAttorney();
     const [isOpen, setIsOpen] = useState(false);
     const { user, logOut } = useAuth();
     // console.log(user);
@@ -33,7 +37,7 @@ const Navbar = () => {
 
         {
             user ? <>
-                <li><NavLink to="/dashboard" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Profile <HiChevronRight className='h-5 w-5' /></NavLink></li>
+                <li><NavLink to={`${isAdmin ? "/dashboard/manage-blog" : isAttorney ? "/dashboard/attorney-profile" : "/dashboard/my-profile"}`} className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Profile <HiChevronRight className='h-5 w-5' /></NavLink></li>
 
                 <li><button className='navDefault' onClick={handleOut}>Logout <HiChevronRight className='h-5 w-5' /></button></li>
             </> : <li><NavLink to="/sign-in" className={({ isActive }) => (isActive ? "navActive" : "navDefault")}>Sign In <HiChevronRight className='h-5 w-5' /></NavLink></li>
