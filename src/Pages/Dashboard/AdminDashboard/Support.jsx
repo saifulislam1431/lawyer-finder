@@ -14,7 +14,7 @@ const Support = () => {
         }
     })
 
-    console.log(allSupport);
+    // console.log(allSupport);
 
     return (
         <section>
