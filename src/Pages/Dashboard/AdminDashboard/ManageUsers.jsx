@@ -14,7 +14,7 @@ const ManageUsers = () => {
             return response.data
         }
     })
-    console.log(allUsers);
+    // console.log(allUsers);
 
     const handleDelete = async (id) => {
 
