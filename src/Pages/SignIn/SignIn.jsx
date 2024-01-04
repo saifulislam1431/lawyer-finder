@@ -6,6 +6,7 @@ import img from "../../assets/Banner/banner4.png"
 import { HiArrowSmallLeft } from 'react-icons/hi2';
 import { FaEye, FaEyeSlash, FaFacebookF, FaGoogle } from 'react-icons/fa';
 import useAuth from '../../hooks/useAuth';
+import axios from 'axios';
 
 const SignIn = () => {
     const { signIn, googleIn } = useAuth();

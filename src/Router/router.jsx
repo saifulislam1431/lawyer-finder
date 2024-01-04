@@ -34,6 +34,7 @@ import WriteFeedback from '../Pages/Dashboard/UserDashboard/WriteFeedback';
 import ApplyJob from '../Pages/Dashboard/UserDashboard/ApplyJob';
 import CreateAttorneyProfile from '../Pages/Dashboard/UserDashboard/CreateAttorneyProfile';
 import AttorneyRoute from './AttorneyRoute';
+import CreateHiringPost from '../Pages/Dashboard/AttorneyDashboard/CreateHiringPost';
 
 const router = createBrowserRouter([
     {
@@ -124,6 +125,10 @@ const router = createBrowserRouter([
                     {
                         path: "write-blog",
                         element: <PrivateRoute><AttorneyRoute><WriteBlog /></AttorneyRoute></PrivateRoute>
+                    },
+                    {
+                        path: "create-hiring-post",
+                        element: <PrivateRoute><AttorneyRoute><CreateHiringPost /></AttorneyRoute></PrivateRoute>
                     },
                     {
                         path: "my-profile",
