@@ -11,12 +11,11 @@ const token = import.meta.env.VITE_IMAGE_TOKEN;
 
 const MyProfile = () => {
     const [axiosSecure] = useAxiosSecure();
-
     const [userInfo, refetch] = useProfile();
     console.log(userInfo);
-    const [name, setName] = useState(userInfo?.name);
-    const [email, setEmail] = useState(userInfo?.email);
-    const [phone, setPhone] = useState(userInfo?.phone);
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
     const hosting_url = `https://api.imgbb.com/1/upload?key=${token}`
     const { register, formState: { errors }, handleSubmit, reset, formState, watch } = useForm();
 
@@ -58,9 +57,9 @@ const MyProfile = () => {
     const handleEditProfile = async (id) => {
         const newData = {
             id,
-            name,
-            email,
-            phone
+            name: name === "" || null ? userInfo?.name : name,
+            email: email === "" || null ? userInfo?.email : email,
+            phone: phone === "" || null ? userInfo?.phone : phone
         }
         const response = await axiosSecure.patch(`/edit-user-profile/${id}`, newData)
         if (response?.data?.modifiedCount > 0) {

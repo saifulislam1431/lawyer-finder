@@ -16,7 +16,7 @@ const PrivateRoute = ({ children }) => {
             icon: 'error',
             confirmButtonText: 'Cool'
         })
-        return <Navigate to="/signIn" state={{ from: location }} replace />
+        return <Navigate to="/sign-in" state={{ from: location }} replace />
     }
     if (user) {
         return children;

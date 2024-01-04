@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import SectionHead from '../../../Components/SectionHead';
 import useAuth from '../../../hooks/useAuth';
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
+import useAxiosSecure from '../../../hooks/useAxiosSecure';
 
 const ServiceDetails = () => {
     const { register, formState: { errors }, handleSubmit, reset, formState, watch } = useForm();
     const { user } = useAuth();
+    const navigate = useNavigate();
+    const [axiosSecure] = useAxiosSecure();
     const { name } = useParams();
     console.log(name);
     const [service, setService] = useState({});
@@ -19,7 +23,26 @@ const ServiceDetails = () => {
 
 
     const onSubmit = async (data) => {
-        console.log(data);
+        if (!user) {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please Sign In First!',
+                icon: 'warning',
+                confirmButtonText: 'Cool'
+            })
+            navigate("/sign-in")
+        } else {
+            const response = await axiosSecure.post("/create-support", data)
+            if (response?.data?.insertedId) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Your query is submitted!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
+                reset();
+            }
+        }
     }
 
     React.useEffect(() => {
