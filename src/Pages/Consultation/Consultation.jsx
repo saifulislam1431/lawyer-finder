@@ -38,7 +38,7 @@ const Consultation = () => {
     }
 
     useEffect(() => {
-        fetch("http://localhost:5000/get-all-services")
+        fetch("https://lawyer-finder-pro.vercel.app/get-all-services")
             .then(res => res.json())
             .then(data => setService(data))
     }, [])

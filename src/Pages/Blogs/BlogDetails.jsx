@@ -7,7 +7,7 @@ const BlogDetails = () => {
     const { id } = useParams();
     const [blog, setBlog] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/single-blog-details/${id}`)
+        fetch(`https://lawyer-finder-pro.vercel.app/single-blog-details/${id}`)
             .then(res => res.json())
             .then(data => setBlog(data))
     }, [id])

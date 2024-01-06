@@ -51,7 +51,7 @@ const Auth = ({ children }) => {
             setUser(currentUser)
             if (currentUser) {
                 // const email= currentUser.email;
-                axios.post("http://localhost:5000/jwt", {
+                axios.post("https://lawyer-finder-pro.vercel.app/jwt", {
                     email: currentUser.email
                 }).then(data => {
                     // console.log(data.data.token);

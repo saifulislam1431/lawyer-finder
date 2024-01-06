@@ -16,7 +16,7 @@ const ServiceDetails = () => {
     const [service, setService] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/single-service-details/${name}`)
+        fetch(`https://lawyer-finder-pro.vercel.app/single-service-details/${name}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [name])

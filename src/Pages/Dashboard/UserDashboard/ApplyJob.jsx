@@ -18,7 +18,7 @@ const ApplyJob = () => {
     const [post, setPost] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/job-post/${id}`)
+        fetch(`https://lawyer-finder-pro.vercel.app/job-post/${id}`)
             .then(res => res.json())
             .then(data => setPost(data))
     }, [id])

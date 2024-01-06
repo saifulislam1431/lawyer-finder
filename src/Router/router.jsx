@@ -64,7 +64,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/consultation",
-                element: <Consultation />
+                element: <PrivateRoute><Consultation /></PrivateRoute>
             },
             {
                 path: "/about",

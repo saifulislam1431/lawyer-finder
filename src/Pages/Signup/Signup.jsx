@@ -80,7 +80,7 @@ const Signup = () => {
                                             //     icon: 'success',
                                             //     confirmButtonText: 'Ok'
                                             // })
-                                            const res = await axios.post('http://localhost:5000/users', newUser);
+                                            const res = await axios.post('https://lawyer-finder-pro.vercel.app/users', newUser);
                                             // console.log(res.data)
                                             if (res?.data?.insertedId) {
                                                 navigate(from, { replace: true })

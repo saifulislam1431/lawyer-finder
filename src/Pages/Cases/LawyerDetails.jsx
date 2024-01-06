@@ -7,7 +7,7 @@ const LawyerDetails = () => {
     const [lawyerData, setLawyerData] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/single-lawyer-profile/${id}`)
+        fetch(`https://lawyer-finder-pro.vercel.app/single-lawyer-profile/${id}`)
             .then(res => res.json())
             .then(data => setLawyerData(data))
     }, [id]);

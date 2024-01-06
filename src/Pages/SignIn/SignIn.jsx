@@ -63,7 +63,7 @@ const SignIn = () => {
                     role: "User"
                 }
 
-                const resData = await axios.post('http://localhost:5000/users', newData);
+                const resData = await axios.post('https://lawyer-finder-pro.vercel.app/users', newData);
                 if (resData.data.insertedId) {
                     navigate(from, { replace: true })
                     Swal.fire({

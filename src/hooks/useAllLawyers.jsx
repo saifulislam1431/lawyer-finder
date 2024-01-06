@@ -6,7 +6,7 @@ const useAllLawyers = () => {
     const { data: allLawyers = [], refetch } = useQuery({
         queryKey: ["all-lawyers"],
         queryFn: async () => {
-            const response = await axios.get("http://localhost:5000/all-lawyers")
+            const response = await axios.get("https://lawyer-finder-pro.vercel.app/all-lawyers")
             return response.data
         }
     })
