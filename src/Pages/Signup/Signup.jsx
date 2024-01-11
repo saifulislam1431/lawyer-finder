@@ -25,6 +25,7 @@ const Signup = () => {
 
 
     const onSubmit = (data) => {
+        console.log("Click");
         const image = data?.photo;
         // console.log(image[0]);
         const formData = new FormData();
@@ -206,10 +207,12 @@ const Signup = () => {
 
                     <p className='my-3 font-semibold text-red-600'>{error}</p>
 
-                    <button input type="submit" className="btn btn-block px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-gray-700  text-white inline-block">
+                    {/* <button type="submit" className="btn btn-block px-5 py-2.5 relative rounded group overflow-hidden font-medium bg-gray-700  text-white inline-block">
                         <span className="absolute bottom-0 left-0 flex w-full h-0 mt-0 transition-all duration-500 ease-out transform translate-y-0 bg-red-600  group-hover:h-full ">
                         </span><span className="relative group-hover:text-gray-800 flex items-center gap-4 justify-center">
-                            Sign Up  </span></button>
+                            Sign Up  </span></button> */}
+
+                    <input type="submit" value="Sign Up" className="btn btn-primary" />
                 </form>
 
 

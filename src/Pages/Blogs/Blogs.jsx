@@ -19,7 +19,7 @@ const Blogs = () => {
                             <figure><img src={blog?.thumbnails} alt="Blog thumbnails" className='w-full' /></figure>
                             <div className="card-body">
                                 <h2 className=" text-lg font-bold text-accent">{blog?.title}</h2>
-                                <p className='text-white'>{blog?.short_description}</p>
+                                <p className='text-white'>{blog?.short_description?.slice(0, 50)}</p>
 
                                 <div>
                                     <Link to={`/blog-details/${blog?._id}`} className='myBtn'>Read</Link>
